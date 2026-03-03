@@ -1,0 +1,27 @@
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 2rem;
+    width: 100%;
+    padding: 0.75rem 1.5rem;
+}
+
+.clock {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 0.5rem;
+}
+
+.clock .time {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.clock .date {
+    font-size: 16px;
+    font-weight: 500;
+}
+

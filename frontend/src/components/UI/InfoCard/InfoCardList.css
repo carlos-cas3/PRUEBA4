@@ -1,0 +1,160 @@
+/* --- Descripción --- */
+.info-card-list-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0;
+}
+
+/* --- Contenedor de lista --- */
+.info-card-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+}
+
+/* --- Estado vacío --- */
+.info-card-list-empty {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #999;
+    padding: 0.8rem 0;
+    font-style: italic;
+}
+
+/* --- Ítems --- */
+.info-card-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fafafa;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.info-card-list-item:hover {
+    background: #f2f2f2;
+    transform: translateX(3px);
+}
+
+.info-card-list-left {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.info-card-list-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    color: #800000;
+    /* color por defecto para iconos tipo font */
+    flex-shrink: 0;
+}
+
+/* Ajusta automáticamente los SVG importados */
+.info-card-list-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.info-card-list-text h4 {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.info-card-list-text span {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* --- Lado derecho --- */
+.info-card-list-right {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.info-card-list-right .date {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+/* --- Prioridades --- */
+.priority {
+    padding: 0.3rem 0.6rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.priority.alta {
+    background: #ff4d4f;
+    color: #fff;
+}
+
+.priority.media {
+    background: #ffa940;
+    color: #fff;
+}
+
+.priority.baja {
+    background: #52c41a;
+    color: #fff;
+}
+
+/* --- Botón "Ver más" --- */
+.view-more-btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.view-more-btn:hover {
+    background-color: #1e40af;
+}
+
+.status {
+    font-size: 0.8rem;
+    padding: 3px 8px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.status.pendiente {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+.status.en-progreso {
+    background-color: #4e9fff;
+    color: white;
+}
+
+.status.completado {
+    background-color: #4caf50;
+    color: white;
+}
+
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .info-card-list-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+    }
+}

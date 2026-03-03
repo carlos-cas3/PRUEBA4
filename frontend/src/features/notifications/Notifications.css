@@ -1,0 +1,52 @@
+.notifications-container {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.notif-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.notif-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.notifications-save-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+}
+
+
+.save-all-button {
+    background: var(--vino-medio); 
+    color: var(--texto-claro);
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+
+    font-weight: 600;
+    font-size: 0.95rem;
+
+    border: none;
+    cursor: pointer;
+
+    transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    box-shadow: 0 3px 8px rgba(124, 30, 63, 0.35); 
+}
+
+.save-all-button:hover {
+    background: var(--vino-oscuro); 
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(124, 30, 63, 0.45);
+}
+
+.save-all-button:active {
+    transform: translateY(0px);
+    background: var(--vino-claro); 
+}

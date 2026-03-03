@@ -1,0 +1,46 @@
+/* === Variante STATS (todo integrado) === */
+.info-card--stats {
+    background: #fff;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header: menos separación */
+.info-card--stats:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido del gráfico */
+.info-card--stats .info-card-content {
+    padding: 0.5rem 1rem 1rem 1rem;
+    /* menos padding arriba */
+    gap: 0.6rem;
+    /* antes 1rem */
+}
+
+/* Bloque interno de contenido */
+.info-card-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* antes 1rem */
+}
+
+.info-card-stats .info-card-desc {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0;
+    /* asegura que no tenga espacio adicional */
+}
+
+.info-card-stats .info-card-chart {
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}

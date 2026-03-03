@@ -1,0 +1,63 @@
+.multi-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.multi-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 14px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: white;
+
+    cursor: pointer;
+    transition: 0.18s ease;
+    color: #333;
+}
+
+.multi-item:hover {
+    background: #f8f1f4;
+}
+
+.multi-item.active {
+    border-color: var(--vino-medio);
+    background: #f8f1f4;
+    color: var(--vino-oscuro);
+}
+
+.multi-checkbox input {
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    accent-color: var(--vino-medio);
+}
+
+.multi-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: var(--vino-oscuro);
+}
+
+.multi-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.multi-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: inherit;
+}
+
+.multi-desc {
+    margin-top: 2px;
+    font-size: 13px;
+    color: #6b7280;
+}
